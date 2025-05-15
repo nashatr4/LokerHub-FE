@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import Navbar from "@/components/global/navbar"
@@ -43,8 +43,8 @@ const mockApplications = [
 ]
 
 export default function ApplicationStatusPage() {
-  const [applications, setApplications] = useState(mockApplications) // Use mock data
-  const [isLoading, setIsLoading] = useState(false) // Directly set loading to false as no fetching occurs
+  const [applications] = useState(mockApplications) // Use mock data
+  const [isLoading] = useState(false) // Directly set loading to false as no fetching occurs
 
   const getStatusBadgeClass = (status: string) => {
     switch (status) {

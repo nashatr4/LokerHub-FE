@@ -37,7 +37,7 @@ export default function EditProfileKandidat() {
     fieldOfInterest: "IT",
   })
 
-  const [isSaving, setIsSaving] = useState(false)
+  const [isSaving] = useState(false)
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

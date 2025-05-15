@@ -15,7 +15,7 @@ export interface JobFormData {
   qualifications: string[]
 }
 
-export function addJobForm(initialFormData: any) {
+export function useaddJobForm(initialFormData: any) {
   const router = useRouter()
   const [formData, setFormData] = useState<JobFormData>({
     title: "",

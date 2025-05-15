@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { Search } from "lucide-react"
 import Image from "next/image"
@@ -59,10 +59,10 @@ const mockJobs: Job[] = [
 ]
 
 export default function Kandidat() {
-  const [jobs, setJobs] = useState<Job[]>(mockJobs)
+  const [jobs] = useState<Job[]>(mockJobs)
   const [searchQuery, setSearchQuery] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
-  const [isLoading, setIsLoading] = useState(false)
+  // const [isLoading, setIsLoading] = useState(false)
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()

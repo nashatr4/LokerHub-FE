@@ -3,7 +3,6 @@
 import type React from "react"
 import { useState, useRef } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
@@ -42,7 +41,7 @@ export default function EditProfilePerekrut() {
     },
   })
 
-  const [isSaving, setIsSaving] = useState(false)
+  const [isSaving] = useState(false)
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
   const [logoPreview, setLogoPreview] = useState<string | null>(null)
 

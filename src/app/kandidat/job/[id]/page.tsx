@@ -1,8 +1,8 @@
 "use client"
 
-import { useParams, useRouter } from "next/navigation"
+// import { useParams, useRouter } from "next/navigation"
 import Image from "next/image"
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import Footer from "@/components/global/footer"
 import Navbar from "@/components/global/navbar"
 import { Button } from "@/components/ui/button"
@@ -49,8 +49,8 @@ const jobData: JobDetail = {
 }
 
 export default function JobDetailPage() {
-  const params = useParams()
-  const router = useRouter()
+  // const params = useParams()
+  // const router = useRouter()
   const job = jobData // Gunakan data statis
 
   return (

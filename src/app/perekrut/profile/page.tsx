@@ -21,7 +21,7 @@ const profile = {
 }
 
 export default function ProfileRekruter() {
-  const router = useRouter()
+  // const router = useRouter()
 
   return (
     <div className="min-h-screen flex flex-col bg-white">

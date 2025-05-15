@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { FiArrowLeft } from "react-icons/fi";
-import { FaChevronDown, FaChevronCircleUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa6"
 import Navbar from "@/components/global/navbar"
 import Footer from "@/components/global/footer"
@@ -62,9 +62,9 @@ export default function ApplicantListPage() {
     logo: "/placeholder.svg?height=60&width=60",
   }
 
-  const [job, setJob] = useState<Job>(mockJob);
+  const [job] = useState<Job>(mockJob);
   const [applicants, setApplicants] = useState<Applicant[]>([])
-  const [showJobInfo, setShowJobInfo] = useState(false)
+  const [showJobInfo] = useState(false)
 
   useEffect(() => {
     setApplicants(mockApplicant);

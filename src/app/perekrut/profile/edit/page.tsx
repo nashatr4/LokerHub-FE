@@ -31,13 +31,13 @@ export default function EditProfilePerekrut() {
   const [profile, setProfile] = useState<ProfileData>({
     fullName: "Aditya Pratama",
     title: "Senior HR in Shopee Indonesia",
-    photoUrl: "/placeholder.svg?height=120&width=120",
+    photoUrl: "/ProfilePicture.svg",
     phoneNumber: "081548797755",
     company: {
       name: "Shopee",
       industry: "E-Commerce",
       location: "Jakarta Pusat",
-      logoUrl: "/placeholder.svg?height=80&width=80",
+      logoUrl: "/LogoPerusahaan.jpg",
     },
   })
 

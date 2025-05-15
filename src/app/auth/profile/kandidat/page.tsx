@@ -176,7 +176,8 @@ export default function CompleteProfileKandidat() {
                 </form>
 
                 <div className="flex justify-center">
-                    <Button type="submit"
+                    <Button type="button"
+                            onClick={() => router.push("/kandidat")}
                             className="py-2 px-6 bg-[#1e3a5f] hover:bg-[#1e3a5f]/90 text-white font-medium rounded-md transition-colors cursor-pointer mb-10">
                         Submit
                     </Button>

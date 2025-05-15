@@ -215,7 +215,8 @@ export default function CompleteProfileRekruter() {
                 )}
 
                 <div className="flex justify-center mt-6">
-                    <Button type="submit"
+                    <Button type="button"
+                            onClick={() => router.push("/perekrut")}
                             className="py-2 px-6 bg-[#1e3a5f] hover:bg-[#1e3a5f]/90 text-white font-medium rounded-md transition-colors cursor-pointer mb-10">
                         Submit
                     </Button>

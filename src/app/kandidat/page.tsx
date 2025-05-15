@@ -108,7 +108,7 @@ export default function Kandidat() {
             {jobs.map((job) => (
               <div key={job.id} className="relative group">
                 <div className="bg-white rounded-lg shadow-md p-4 border border-black hover:shadow-lg transition-shadow relative z-20">
-                  <Link href={`/job/${job.id}`} className="block">
+                  <Link href={`/kandidat/job/${job.id}`} className="block">
                     {/* Logo + Company Info */}
                     <div className="flex items-center">
                       <div className="bg-red-100 rounded-md p-2 mr-3">

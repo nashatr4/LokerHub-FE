@@ -75,7 +75,8 @@ export default function RegisterKandidat() {
                         </div>
 
                         <button
-                            type="submit"
+                            onClick={() => router.push("/auth/profile/kandidat")}
+                            type="button"
                             className="w-full py-2 bg-[#a8c5e2] hover:bg-[#97b8d9] text-[#1e3a5f] font-medium rounded-md transition-colors cursor-pointer"
                         >
                             Buat Akun

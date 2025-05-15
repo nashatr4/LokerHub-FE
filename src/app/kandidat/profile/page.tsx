@@ -9,11 +9,11 @@ import Footer from "@/components/global/footer"
 const profile = {
   fullName: "Aditya Pratama",
   title: "Fresh Graduate Teknologi Informasi Universitas Gadjah Mada",
-  photoUrl: "/placeholder.svg?height=120&width=120",
+  photoUrl: "/ProfilePicture.svg",
   phoneNumber: "081548797755",
   education: "S1",
   location: "Yogyakarta",
-  cvUrl: "cv.pdf",
+  cvUrl: "/CV.pdf",
   fieldOfInterest: "IT"
 }
 

@@ -28,11 +28,11 @@ export default function EditProfileKandidat() {
   const [profile, setProfile] = useState<ProfileData>({
     fullName: "Aditya Pratama",
     title: "Fresh Graduate Teknologi Informasi Universitas Gadjah Mada",
-    photoUrl: "/placeholder.svg?height=120&width=120",
+    photoUrl: "/ProfilePicture.svg",
     phoneNumber: "081548797755",
     education: "S1",
     location: "Yogyakarta",
-    cvUrl: "cv.pdf",
+    cvUrl: "/CV.pdf",
     cvFile: null,
     fieldOfInterest: "IT",
   })

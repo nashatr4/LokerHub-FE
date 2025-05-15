@@ -3,8 +3,7 @@
 import type React from "react"
 import { useRouter } from "next/navigation"
 import { ArrowLeft, Plus, X } from "lucide-react"
-import Image from "next/image"
-import { useaddJobForm } from "@/hooks/tambahLowongan"
+import { useAddJobForm } from "@/hooks/tambahLowongan"
 import Navbar from "@/components/global/navbar"
 import Footer from "@/components/global/footer"
 
@@ -24,7 +23,7 @@ export default function AddJobPage() {
     removeQualification,
     handleSubmit,
     isSubmitting,
-  } = useaddJobForm({
+  } = useAddJobForm({
     title: "",
     jobType: "",
     positionLevel: "",

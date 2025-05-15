@@ -47,18 +47,24 @@ export default function EditProfilePerekrut() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
-  
+    
     setProfile((prev) => {
       if (name.includes(".")) {
         const [parent, child] = name.split(".")
-        const parentObj = (prev[parent as keyof ProfileData] ?? {}) as Record<string, any>
-        return {...prev, [parent]: {
-            ...parentObj,
-            [child]: value,
-          },
+        if (parent === "company") {
+          return {
+            ...prev,
+            company: {
+              ...prev.company,
+              [child]: value
+            }
+          }
         }
+        return prev;
       } else {
-        return {...prev, [name]: value,
+        return {
+          ...prev,
+          [name as keyof ProfileData]: value
         }
       }
     })

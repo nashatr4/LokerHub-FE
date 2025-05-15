@@ -1,4 +1,3 @@
-// src/hooks/tambahLowongan.ts
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
@@ -15,20 +14,33 @@ export interface JobFormData {
   qualifications: string[]
 }
 
-export function useaddJobForm(initialFormData: any) {
+export interface InitialFormData {
+  title?: string
+  jobType?: string
+  positionLevel?: string
+  salaryMin?: string
+  salaryMax?: string
+  field?: string
+  closingDate?: string
+  description?: string
+  responsibilities?: string[]
+  qualifications?: string[]
+}
+
+export function useAddJobForm(initialFormData?: InitialFormData) {
   const router = useRouter()
   const [formData, setFormData] = useState<JobFormData>({
-    title: "",
-    jobType: "",
-    positionLevel: "",
-    salaryMin: "",
-    salaryMax: "",
-    field: "",
-    closingDate: "",
-    description: "",
-    responsibilities: [""],
-    qualifications: [""],
-})
+    title: initialFormData?.title || "",
+    jobType: initialFormData?.jobType || "",
+    positionLevel: initialFormData?.positionLevel || "",
+    salaryMin: initialFormData?.salaryMin || "",
+    salaryMax: initialFormData?.salaryMax || "",
+    field: initialFormData?.field || "",
+    closingDate: initialFormData?.closingDate || "",
+    description: initialFormData?.description || "",
+    responsibilities: initialFormData?.responsibilities || [""],
+    qualifications: initialFormData?.qualifications || [""],
+  })
   const [newResponsibility, setNewResponsibility] = useState("")
   const [newQualification, setNewQualification] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)

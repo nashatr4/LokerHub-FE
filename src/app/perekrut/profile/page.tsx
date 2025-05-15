@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 import React from "react"
 import Navbar from "@/components/global/navbar"
 import Footer from "@/components/global/footer"
@@ -21,8 +20,6 @@ const profile = {
 }
 
 export default function ProfileRekruter() {
-  // const router = useRouter()
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* Header */}
